@@ -61,7 +61,8 @@ public class NBody {
 
 			// TODO: read data for each body
 			// TODO: construct new body object and add to array
-			cbArray[k] = new CelestialBody(s.nextDouble(), s.nextDouble(), s.nextDouble(), s.nextDouble(), s.nextDouble(), s.next());
+			cbArray[k] = new CelestialBody(s.nextDouble(), s.nextDouble(), 
+			s.nextDouble(), s.nextDouble(), s.nextDouble(), s.next());
 		}
 
 		s.close();
@@ -73,7 +74,7 @@ public class NBody {
 		double totalTime = 39447000.0;
 		double dt = 25000.0;
 
-		String fname= "./data/planets.txt";
+		String fname= "./data/kaleidoscope.txt";
 
 		if (args.length > 2) {
 			totalTime = Double.parseDouble(args[0]);
